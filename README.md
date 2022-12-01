@@ -1,3 +1,3 @@
-# Repository to hold Nugget Package related to Mass Properties Domain.
+# Repository to hold Nuget Package related to Mass Properties Domain.
 
 ## MPCFilePickerMauiLibrary
