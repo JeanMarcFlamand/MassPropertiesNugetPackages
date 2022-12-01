@@ -12,7 +12,7 @@ namespace MPCFilePickerMauiLibrary
         public static async Task<Stream> GetFileAsync()
 
         {
-            //For custom file types       
+            //For custom file types.       
             var customFileType = new FilePickerFileType(
                     new Dictionary<DevicePlatform, IEnumerable<string>>
                     {
