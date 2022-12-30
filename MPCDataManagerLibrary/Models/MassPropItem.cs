@@ -1,7 +1,7 @@
 ﻿
 namespace MPCDataManagerLibrary.Models;
 
-internal class MassPropItem : IMassPropItem
+public class MassPropItem : IMassPropItem
 {
     public int? Item { get; set; }
     public string? PartNumber { get; set; }

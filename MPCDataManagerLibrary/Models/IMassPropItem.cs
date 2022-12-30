@@ -1,6 +1,6 @@
 ﻿namespace MPCDataManagerLibrary.Models
 {
-    internal interface IMassPropItem
+    public interface IMassPropItem
     {
         string ANDetail { get; set; }
         string Description { get; set; }
