@@ -19,8 +19,10 @@
 		<PackageIcon>LogoBlanc7jtfCode400x400.png</PackageIcon>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-		<FileVersion>1.0.1.1-beta</FileVersion>
-		<AssemblyVersion>1.0.1.1</AssemblyVersion>
+		<FileVersion>1.0.1.2-beta</FileVersion>
+		<AssemblyVersion>1.0.1.2</AssemblyVersion>
+		<RepositoryUrl>https://github.com/JeanMarcFlamand/MassPropertiesNugetPackages</RepositoryUrl>
+		<PackageReleaseNotes>add repository URL</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
