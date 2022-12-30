@@ -9,6 +9,7 @@ on:
      - '.github/**'
      - 'MPCDataManagerLibrary/**'
      - 'MPCLibrariesDebugApp/**'
+     - 'MassPropertiesNugetPackages.sln'
      - 'README.md'
     
     
