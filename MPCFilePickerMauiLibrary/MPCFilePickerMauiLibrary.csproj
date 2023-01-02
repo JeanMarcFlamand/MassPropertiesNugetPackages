@@ -16,7 +16,7 @@
 		<PackageIcon>LogoBlanc7jtfCode400x400.png</PackageIcon>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-		<FileVersion>1.0.1.12-beta</FileVersion>
+		<FileVersion></FileVersion>
 		<AssemblyVersion></AssemblyVersion>
 		<RepositoryUrl>https://github.com/JeanMarcFlamand/MassPropertiesNugetPackages</RepositoryUrl>
 		<PackageReleaseNotes>add repository URL</PackageReleaseNotes>
@@ -28,6 +28,8 @@
 	  <PackageTags>Mass Properties; Weight and Balance; Weight;Center of Gravity;Inertia; Mass;</PackageTags>
 	  <Authors>Jean-Marc Flamand</Authors>
 	  <Company>7jtfCode</Company>
+	  <Nullable>enable</Nullable>
+	  <Version>1.0.1.12-beta1</Version>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0|AnyCPU'">

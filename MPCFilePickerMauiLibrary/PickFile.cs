@@ -9,7 +9,7 @@ namespace MPCFilePickerMauiLibrary
 {
     public class PickFile
     {
-        public static async Task<Stream> GetFileAsync()
+        public static async Task<Stream?> GetFileAsync()
 
         {
             //For custom file types.       
