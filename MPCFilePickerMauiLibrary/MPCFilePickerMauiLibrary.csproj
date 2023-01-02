@@ -34,7 +34,7 @@ When targeting .NET 6 or higher, make sure to restore packages with the PublishR
 	  <Nullable>enable</Nullable>
 	  <Version>1.0.1.12-beta2</Version>
 	  <Copyright>2023</Copyright>
-	  <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+	  <PackageReadmeFile></PackageReadmeFile>
 	  <Description>Library used to pick file.</Description>
 	</PropertyGroup>
 
@@ -148,7 +148,7 @@ When targeting .NET 6 or higher, make sure to restore packages with the PublishR
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="docs\readme.md" Pack="true" PackagePath="\" />
+		
 	  <None Update="Resources\Images\logoblanc7jtfcode128x128.png">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
