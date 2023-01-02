@@ -2,20 +2,20 @@
 {
     public interface IMassPropItem
     {
-        string ANDetail { get; set; }
-        string Description { get; set; }
-        string DesingOwnerCode { get; set; }
+        string? ANDetail { get; set; }
+        string? Description { get; set; }
+        string? DesingOwnerCode { get; set; }
         int? Instance { get; set; }
         int? Item { get; set; }
         double? MomentWithXarm { get; set; }
         double? MomentWithYarm { get; set; }
         double? MomentWithZarm { get; set; }
-        string NIC { get; set; }
-        string PackageCode { get; set; }
-        string PartNumber { get; set; }
+        string? NIC { get; set; }
+        string? PackageCode { get; set; }
+        string? PartNumber { get; set; }
         int? Qty { get; set; }
-        string Rev { get; set; }
-        string Type { get; set; }
+        string? Rev { get; set; }
+        string? Type { get; set; }
         double? UnitWeight { get; set; }
         double? WeightWithXarm { get; set; }
         double? WeightWithYarm { get; set; }
