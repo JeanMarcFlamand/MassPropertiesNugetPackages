@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net7.0;net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks>net7.0;net7.0-maccatalyst;net7.0-ios;net7.0-android</TargetFrameworks>
 		<UseMaui>true</UseMaui>
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
@@ -16,16 +16,19 @@
 	</PropertyGroup>
 
 	<PropertyGroup>
-	  <PackageIcon>LogoBlanc7jtfCode400x400.png</PackageIcon>
+	  <PackageIcon>logoblanc7jtfcode128x128.png</PackageIcon>
 	  <RepositoryUrl>https://github.com/JeanMarcFlamand/MassPropertiesNugetPackages</RepositoryUrl>
 	  <PackageTags>Mass Properties; Weight and Balance; Weight;Center of Gravity;Inertia; Mass;</PackageTags>
-	  <PackageReleaseNotes>First Release</PackageReleaseNotes>
+	  <PackageReleaseNotes>Error :
+Unable to optimize assemblies for performance: a valid runtime package was not found.
+Either set the PublishReadyToRun property to false, or use a supported runtime identifier when publishing.
+When targeting .NET 6 or higher, make sure to restore packages with the PublishReadyToRun property set to true.</PackageReleaseNotes>
 	  <FileVersion>1.0.0.0</FileVersion>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 	  <AssemblyVersion></AssemblyVersion>
 	  <Title>MPC Data Manager Library</Title>
-	  <Version>1.0.0.0-beta1</Version>
+	  <Version>1.0.0.0-beta2</Version>
 	  <Description>Library used for mass properties models and calculation</Description>
 	  <Copyright>2023</Copyright>
 	  <Authors>Jean-Marc Flamand</Authors>
@@ -35,21 +38,25 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0|AnyCPU'">
 	  <ApplicationTitle></ApplicationTitle>
 	  <ApplicationDisplayVersion />
+	  <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0|x64'">
 	  <ApplicationTitle />
 	  <ApplicationDisplayVersion />
+	  <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0|AnyCPU'">
 	  <ApplicationTitle></ApplicationTitle>
 	  <ApplicationDisplayVersion />
+	  <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0|x64'">
 	  <ApplicationTitle />
 	  <ApplicationDisplayVersion />
+	  <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android|AnyCPU'">
@@ -95,21 +102,25 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-maccatalyst|AnyCPU'">
 	  <ApplicationTitle></ApplicationTitle>
 	  <ApplicationDisplayVersion />
+	  <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-maccatalyst|x64'">
 	  <ApplicationTitle />
 	  <ApplicationDisplayVersion />
+	  <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-maccatalyst|AnyCPU'">
 	  <ApplicationTitle></ApplicationTitle>
 	  <ApplicationDisplayVersion />
+	  <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-maccatalyst|x64'">
 	  <ApplicationTitle />
 	  <ApplicationDisplayVersion />
+	  <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-tizen|AnyCPU'">
@@ -155,36 +166,45 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-windows10.0.19041.0|AnyCPU'">
 	  <ApplicationTitle></ApplicationTitle>
 	  <ApplicationDisplayVersion />
+	  <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-windows10.0.19041.0|x64'">
 	  <ApplicationTitle />
 	  <ApplicationDisplayVersion />
+	  <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-windows10.0.19041.0|AnyCPU'">
 	  <ApplicationTitle></ApplicationTitle>
 	  <ApplicationDisplayVersion />
+	  <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-windows10.0.19041.0|x64'">
 	  <ApplicationTitle />
 	  <ApplicationDisplayVersion />
+	  <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<PropertyGroup>
+	  <Nullable>enable</Nullable>
+	  <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 	</PropertyGroup>
 
 	<PropertyGroup>
 	  <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
-	  <Nullable>enable</Nullable>
+	  <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Folder Include="Resources\Images\" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <None Include="..\..\..\7JTFCode\Logo2022\LogoBlanc7jtfCode400x400.png" Link="Resources\Images\LogoBlanc7jtfCode400x400.png">
-	    <PackagePath>\</PackagePath>
+	  <None Update="ReadMe.md">
 	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Update="Resources\Images\logoblanc7jtfcode128x128.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
 	  </None>
 	</ItemGroup>
 
