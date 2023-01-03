@@ -6,11 +6,14 @@ on:
       - master
       #- CodeSign
     paths-ignore:
-     - '.github/**'
-     - 'MPCDataManagerLibrary/**'
-     - 'MPCLibrariesDebugApp/**'
-     - 'MassPropertiesNugetPackages.sln'
-     - 'README.md'
+      - '.github/**'
+      #Remove the line below when project is OK
+      - 'MPCFilePickerMauiLibrary/**'
+      - 'MPCDataManagerLibrary/**'
+      - 'MPCDataManagerLibrary/**'
+      - 'MPCLibrariesDebugApp/**'
+      - 'MassPropertiesNugetPackages.sln'
+      - 'README.md'
     
     
     tags:
