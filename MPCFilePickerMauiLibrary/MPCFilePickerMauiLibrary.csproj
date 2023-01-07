@@ -116,15 +116,7 @@ When targeting .NET 6 or higher, make sure to restore packages with the PublishR
 	  <ApplicationTitle>MPC File Picker Library</ApplicationTitle>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-tizen|x64'">
-	  <ApplicationTitle>MPC File Picker Library</ApplicationTitle>
-	</PropertyGroup>
-
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-tizen|AnyCPU'">
-	  <ApplicationTitle>MPC File Picker Library</ApplicationTitle>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-tizen|x64'">
 	  <ApplicationTitle>MPC File Picker Library</ApplicationTitle>
 	</PropertyGroup>
 
